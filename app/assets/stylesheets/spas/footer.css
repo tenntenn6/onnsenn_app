@@ -1,0 +1,44 @@
+/*トップページのフッダー*/
+.footer {
+  
+  border-top: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  height: 15vh;
+  
+}
+
+.footer_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_nav,
+.grid-6 {
+  display: flex;
+  align-items: center;
+  
+}
+
+.my_page,
+.rogu_outo,
+.rogu_in,
+.sinnki {
+  margin: 0 10px;
+}
+
+.waku a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.waku {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+
+

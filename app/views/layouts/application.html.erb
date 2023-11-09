@@ -8,9 +8,45 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <%= yield %>
+    <%#トップページのフッダー%>
+   <footer class="footer">
+     <div class="footer_bar">
+      <%# if user_signed_in? %>
+        <div class="user_nav">
+               <div class="waku">
+                <%= link_to "マイページ" ,class: "my_page"%>
+               </div>
+               <div class="waku">
+                <%= link_to "ログアウト" ,class: "rogu_outo" %>
+               </div>    
+        </div>
+      <% #else %>
+        <div class="grid-6">
+         <div class="waku">
+          <%= link_to "ログイン",class: "rogu_in" %>
+         </div>
+         <div class="waku">
+          <%= link_to "新規登録", class: "sinnki" %>
+         </div>
+        </div>
+      <% #end %>
+     </div>
+   </footer>
   </body>
 </html>
+
+
+
+
