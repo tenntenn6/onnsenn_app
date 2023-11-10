@@ -55,7 +55,7 @@
 | telephone             | string | null: false              |
 | email                 | string | null: false, unique: true|
 | encrypted_password    | string | null: false              |
-| enterprise_id         | string | null: false, unique: true|
+
 
 ### Association
 - has_many :spas

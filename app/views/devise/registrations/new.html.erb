@@ -1,29 +1,132 @@
-<h2>Sign up</h2>
+<%#ヘッダー%>
+<div class= 'top_header'>
+ <div class='sub_header'>
+  <div class='search-bar-contents'>
+    <h1 class = 'apuri_mei'>HOT  TATOO</h1>
+  </div>
+ </div>
+</div>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+
+<%#メイン%>
+<%= form_with model: @company, url: company_registration_path, class: 'registration-main', local: true do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+ <div class='form-wrap'>
+   <div class= 'form-header-top'>
+     <div class='form-header'>
+       <h3 class='form-header-text'>
+        会員情報を入力して下さい
+       </h3>
+     </div>
+   </div>
+
+
+  
+
+ 
+ 
+ 
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">貴社名</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.text_field :company_name , class:"input-default" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">貴社名(かな）</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.text_field :company_name_kana , class:"input-default"%>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">郵便番号</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.text_field :post_code, class:"input-default", placeholder:"例）123-4567", maxlength:"8" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">住所</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.text_field :address , class:"input-default", placeholder:"例）広島県広島市南区松原町1" %>
   </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">申込責任者</label>
+      <span class="indispensable">*</span>
+    </div>
+    <div class='input-name-wrap'>
+      <%= f.text_field :user_name, class:"input-name",  placeholder:"例) 山田太郎" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">申込責任者（かな）</label>
+      <span class="indispensable">*</span>
+    </div>
+    <div class='input-name-wrap'>
+      <%= f.text_field :user_name_kana, class:"input-name", placeholder:"例) やまだたろう" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">郵便番号</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.text_field :telephone, class:"input-default", placeholder:"例）08012124444", maxlength:"11" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">メールアドレス</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.email_field :email, class:"input-default",placeholder:"PC・携帯どちらでも可", autofocus: true %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">パスワード</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.password_field :password, class:"input-default", placeholder:"6文字以上の半角英数字" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">パスワード(確認)</label>
+      <span class="indispensable">*</span>
+    </div>
+    <%= f.password_field :encrypted_password, class:"input-default", placeholder:"同じパスワードを入力して下さい" %>
+  </div>
+
+  
+  
+  <div>
+    <p class='info-text'>※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。</p>
+  </div>
+  <div class='info-text-sub'>
+   <p class='info-text'>※<p class='info-text'><span class="indispensable">*</span>は必須項目です</p></p>
+  </div>
+  
+  <div class='register-btn'>
+    <%= f.submit "会員登録" ,class:"register-red-btn" %>
+  </div>
+ </div>
 <% end %>
+
 
 <%= render "devise/shared/links" %>
