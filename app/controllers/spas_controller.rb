@@ -3,3 +3,4 @@ class SpasController < ApplicationController
     @spas = Spa.all 
   end
 end
+
