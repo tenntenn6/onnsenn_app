@@ -1,0 +1,63 @@
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.new_company {
+  max-width: 100%;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 70%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.actions {
+  text-align: center;
+}
+
+
+.field_top {
+  display: flex;
+}
+
+/* スタイルが適用されたチェックボックス */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
