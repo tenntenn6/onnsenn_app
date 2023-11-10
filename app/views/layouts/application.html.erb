@@ -27,25 +27,25 @@
     <%#トップページのフッダー%>
    <footer class="footer">
      <div class="footer_bar">
-      <%# if user_signed_in? %>
+      <% if company_signed_in? %>
         <div class="user_nav">
                <div class="waku">
                 <%= link_to "マイページ" ,class: "my_page"%>
                </div>
                <div class="waku">
-                <%= link_to "ログアウト" ,class: "rogu_outo" %>
+                <%= link_to "ログアウト", destroy_company_session_path, data: { turbo_method: :delete }, class: "rogu_outo" %>
                </div>    
         </div>
-      <% #else %>
+      <% else %>
         <div class="grid-6">
          <div class="waku">
-          <%= link_to "ログイン",class: "rogu_in" %>
+          <%= link_to "ログイン", new_company_session_path, class: "rogu_in" %>
          </div>
          <div class="waku">
-          <%= link_to "新規登録", class: "sinnki" %>
+          <%= link_to "新規登録", new_company_registration_path, class: "sinnki" %>
          </div>
         </div>
-      <% #end %>
+      <% end %>
      </div>
    </footer>
   </body>

@@ -2,7 +2,7 @@
 <div class= 'top_header'>
  <div class='sub_header'>
   <div class='search-bar-contents'>
-    <h1 class = 'apuri_mei'>HOT  TATOO</h1>
+    <h1 class = 'apuri_mei'>HOT   TATOO</h1>
   </div>
  </div>
 </div>
@@ -11,7 +11,8 @@
 
 <%#メイン%>
 <%= form_with model: @company, url: company_registration_path, class: 'registration-main', local: true do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  
+ 
 
  <div class='form-wrap'>
    <div class= 'form-header-top'>
@@ -22,6 +23,9 @@
      </div>
    </div>
 
+  <div class="error-alert">
+    <%= render "devise/shared/error_messages", resource: resource %>
+  </div>
 
   
 
