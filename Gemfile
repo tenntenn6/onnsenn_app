@@ -76,11 +76,5 @@ group :production do
 end
 
 
-<<<<<<< Updated upstream
-gem 'devise'
-
-gem 'pry-rails'
-=======
 
 gem 'devise'
->>>>>>> Stashed changes

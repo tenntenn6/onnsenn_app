@@ -31,14 +31,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_030622) do
     t.index ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
   end
 
-  create_table "spas", charset: "utf8", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "name", null: false
-    t.text "detail", null: false
-    t.text "facility", null: false
-    t.text "business_hours", null: false
-    t.text "access", null: false
-  end
-
 end
