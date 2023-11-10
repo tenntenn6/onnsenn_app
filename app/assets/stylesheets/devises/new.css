@@ -160,6 +160,7 @@
 
 .info-text-sub {
   display: flex;
+  margin-top: 10px;
 }
 
 .info-text {
