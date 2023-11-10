@@ -10,6 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
+ActiveRecord::Schema[7.0].define(version: 2023_11_09_030622) do
+  create_table "companies", charset: "utf8", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "company_name", null: false
+    t.string "company_name_kana", null: false
+    t.string "post_code", null: false
+    t.string "address", null: false
+    t.string "user_name", null: false
+    t.string "user_name_kana", null: false
+    t.string "telephone", null: false
+    t.string "enterprise_id", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_companies_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_companies_on_reset_password_token", unique: true
+
 ActiveRecord::Schema[7.0].define(version: 2023_11_07_064942) do
   create_table "spas", charset: "utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -19,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_07_064942) do
     t.text "facility", null: false
     t.text "business_hours", null: false
     t.text "access", null: false
+
   end
 
 end
