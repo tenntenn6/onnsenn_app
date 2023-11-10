@@ -138,9 +138,15 @@
 }
 
 /* 送信ボタンのスタイル */
+.register-btn-top {
+  display: flex;
+  justify-content: center;
+}
+
 .register-btn {
   text-align: center;
   margin-top: 20px;
+  width: 70%;
 }
 
 .register-red-btn {
@@ -153,9 +159,9 @@
   cursor: pointer;
 }
 
-.register-red-btn:hover {
-  background-color: #cc0000;
-}
+/*.register-red-btn:hover {
+  background-color: #55FFFF;
+}*/
 
 
 .info-text-sub {
