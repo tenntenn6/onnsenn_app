@@ -8,12 +8,12 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Companies" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
-                    <mxGeometry x="-220" y="90" width="280" height="320" as="geometry">
+                    <mxGeometry x="-220" y="90" width="280" height="290" as="geometry">
                         <mxRectangle x="150" y="130" width="100" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="5" value="company_name(string型、NOT NULL)&#10;&#10;company_name_kana(string型、NOT NULL)&#10;&#10;post_code(string型、NOT NULL)&#10;&#10;address(string型、NOT NULL)&#10;&#10;user_name(string型、NOT NULL)&#10;&#10;user_name_kana(string型、NOT NULL)&#10;&#10;telephone(string型、NOT NULL)&#10;&#10;email(string型、NOT NULL,ユニーク制約)&#10;&#10;encrypted_password(string型、NOT NULL）&#10;&#10;enterprise_id(string型、NOT NULL、ユニーク制約)&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="4" vertex="1">
-                    <mxGeometry y="26" width="280" height="294" as="geometry"/>
+                <mxCell id="5" value="company_name(string型、NOT NULL)&#10;&#10;company_name_kana(string型、NOT NULL)&#10;&#10;post_code(string型、NOT NULL)&#10;&#10;address(string型、NOT NULL)&#10;&#10;user_name(string型、NOT NULL)&#10;&#10;user_name_kana(string型、NOT NULL)&#10;&#10;telephone(string型、NOT NULL)&#10;&#10;email(string型、NOT NULL,ユニーク制約)&#10;&#10;encrypted_password(string型、NOT NULL）&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="4" vertex="1">
+                    <mxGeometry y="26" width="280" height="264" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="Spas" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="160" y="90" width="260" height="280" as="geometry"/>

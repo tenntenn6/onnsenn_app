@@ -21,7 +21,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_030622) do
     t.string "user_name", null: false
     t.string "user_name_kana", null: false
     t.string "telephone", null: false
-    t.string "enterprise_id", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

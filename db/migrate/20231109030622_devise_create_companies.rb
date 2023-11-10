@@ -13,7 +13,7 @@ class DeviseCreateCompanies < ActiveRecord::Migration[7.0]
       t.string :user_name         , null: false
       t.string :user_name_kana    , null: false
       t.string :telephone         , null: false
-      t.string :enterprise_id     , null: false, unique: true
+      
 
 
       ## Recoverable
