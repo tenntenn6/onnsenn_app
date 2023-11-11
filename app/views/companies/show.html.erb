@@ -1,0 +1,70 @@
+ <%#ヘッダー%>
+<div class= 'top_header'>
+ <div class='sub_header'>
+   <div class='search-bar-contents'>
+     <div class='apuri_mei_waku'>
+       <h1 class = 'apuri_mei'>HOT   TATOO</h1>
+     </div>
+     <div class="waku">
+       <%= link_to "施設を登録する", class: "touroku_btn" %>
+      </div> 
+   </div>
+ </div>
+</div>
+
+
+
+<div class="author-section">
+ <div class="author-section-two">
+    <div class="author-info">
+      <div class="author-name">
+         <%= "#{@company_name}様の登録した温泉施設一覧" %>
+      </div>
+    </div>
+
+  <% @spas.each do |spa| %>
+   <div class="facility-details-section">
+     <%# 温泉施設 %>
+     <%#写真%>
+     <div class="facility-photos">
+      <%#= image_tag ,class:"spa-box-img" %>
+     </div>
+
+     <%#施設%>
+     <div class="facility-info">
+       <div class="facility-info-two">
+          <div class="facility-description">
+           <span class="description-content"><%= "#{@spa.name}" %></span>
+          </div>
+      
+     
+
+          <div class="facility-description">
+            <span class="description-content"><%= "#{@spa.detail}" %></span>
+          </div>
+
+           <div class="facility-description">
+             <span class="description-content"><%= "#{@spa.facility}" %></span>
+           </div>
+
+
+            <div class="facility-description">
+             <div class="hours-content-top">営業時間</div>
+             <span class="hours-content"><%= "#{@spa.business_hours}" %></span>
+            </div>
+
+            <div class="facility-description">
+              <div class="access-content-top">アクセス</div>
+              <span class="access-content"><%= "#{@spa.access}" %></span>
+            </div>
+        </div>
+     </div>
+    </div>
+  <% end %>
+
+  </div>
+</div>
+
+
+ 
+    
