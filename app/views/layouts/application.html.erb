@@ -26,6 +26,7 @@
     <%= yield %>
     <%#トップページのフッダー%>
    <footer class="footer">
+    <div class="footer_sub">
      <div class="footer_bar">
       <% if company_signed_in? %>
         <div class="user_nav">
@@ -47,6 +48,7 @@
         </div>
       <% end %>
      </div>
+    </div>
    </footer>
   </body>
 </html>

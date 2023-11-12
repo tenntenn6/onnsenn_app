@@ -1,11 +1,15 @@
 /*トップページのフッダー*/
 .footer {
-  
-  border-top: 1px solid black;
-  padding: 20px;
   text-align: center;
   height: 15vh;
   margin-top: 50px;
+  background-color: #F5F5F5;
+  padding-top: 1vh;
+}
+
+.footer_sub {
+  border-top: 1px solid black;
+  padding: 20px; 
 }
 
 .footer_bar {
@@ -38,6 +42,7 @@
   border: 1px solid black;
   border-radius: 5px;
   margin: 0 3px;
+  background-color: white;
 }
 
 
