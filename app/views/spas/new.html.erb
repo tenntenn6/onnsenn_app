@@ -1,0 +1,30 @@
+<%#ヘッダー%>
+<div class= 'top_header'>
+ <div class='sub_header'>
+  <ul class='search-bar-contents-top'>
+   <li class='search-bar-contents'>
+     <%= link_to "HOT", spas_path, class:"apuri_mei"%>
+    </li>
+    <li class='search-bar-contents'>
+      <%= link_to "TATOO", spas_path, class:"apuri_mei"%>
+   </li>
+  </ul>
+ </div>
+</div>
+
+
+<%#登録フォーム%>
+<div class="contents rows">
+  <div class="containers">
+  <h2 class="title_content_form">施設情報を入力して下さい</h2>
+    <%= form_with(model: @spa, local: true) do |form| %>
+      <%= form.text_field :name, placeholder: "温泉施設の名前" %>
+      <%= form.text_field :image, placeholder: "温泉施設の写真（url）" %>
+      <%= form.text_area :detail, placeholder: "施設の概要を記入して下さい", rows: "10" %>
+      <%= form.text_area :facility, placeholder: "温泉設備について記入して下さい", rows: "10" %>
+      <%= form.text_area :business_hours, placeholder: "営業時間", rows: "5" %>
+      <%= form.text_area :access, placeholder: "温泉施設の住所・アクセス", rows: "7" %>
+      <%= form.submit "登録する" %>
+    <% end %>
+  </div>
+</div>
