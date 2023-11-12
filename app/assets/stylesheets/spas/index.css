@@ -76,7 +76,8 @@
   overflow: scroll;
 }
 
-.title {
+.title,
+.title_content_form {
   font-family: 'Noto Serif JP', serif;
   font-size: 30px;
 }
