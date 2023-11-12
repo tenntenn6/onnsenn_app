@@ -10,7 +10,7 @@ class SpasController < ApplicationController
 
   def create
     @spa = Spa.new(spa_params)   
-    binding.pry 
+    
     if @spa.save
       redirect_to root_path
     else
