@@ -30,7 +30,7 @@
       <% if company_signed_in? %>
         <div class="user_nav">
                <div class="waku">
-                <%= link_to "マイページ" ,class: "my_page"%>
+                <%= link_to "マイページ",company_path(current_company.id) ,class: "my_page"%>
                </div>
                <div class="waku">
                 <%= link_to "ログアウト", destroy_company_session_path, data: { turbo_method: :delete }, class: "rogu_outo" %>
