@@ -24,6 +24,13 @@
       <%= form.text_area :facility, placeholder: "温泉設備について記入して下さい", rows: "10" %>
       <%= form.text_area :business_hours, placeholder: "営業時間", rows: "5" %>
       <%= form.text_area :access, placeholder: "温泉施設の住所・アクセス", rows: "7" %>
+<<<<<<< Updated upstream
+=======
+      <div class="click-upload">
+        温泉施設の写真を選んで下さい
+        <%= form.file_field :image, class:"image_select" %>
+      </div>
+>>>>>>> Stashed changes
       <%= form.submit "登録する" %>
     <% end %>
   </div>
