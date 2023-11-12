@@ -1,3 +1,5 @@
+
+
 /*トップページのヘッダー */
 .top_header {
   background-color: #F5F5F5;
@@ -8,20 +10,6 @@
 .sub_header {
   border-bottom: 1px solid black;
   
-}
-
-.search-bar-contents-top{
-  display: flex;
-  align-items: center;
-  margin-left: 5vw;
-}
-
-.search-bar-contents{
-  margin-left: 1px;
-}
-
-.search-bar-contents a {
- text-decoration: none;
 }
 
 
@@ -38,9 +26,25 @@
 }
 
 
+.search-bar-contents-top{
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.search-bar-contents{
+  margin-left: 1px;
+}
+
+.search-bar-contents a {
+ text-decoration: none;
+}
+
+
 .search-form {
   display: flex;
   align-items: center;
+  flex-direction: row;
   border: none;
   border-radius: 5px;
   height: 100%;
@@ -53,6 +57,7 @@
   height: 5vh;
   padding: 3px 3px;
   margin-right: 7px;
+  display: block;
 }
 
 
@@ -60,6 +65,7 @@
   border: none;
   background-color: #444444;
   border-radius: 2px;
+  margin-bottom: 9px;
 }
 
 .search-icon {
@@ -72,14 +78,15 @@
 .spa-contents {
   text-align: center;
   width: 100vw;
-  height: calc(100vh - 15vh);
-  overflow: scroll;
+  margin-top: 5vh;
+  
 }
 
 .title,
 .title_content_form {
   font-family: 'Noto Serif JP', serif;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .spa-lists {
@@ -94,7 +101,7 @@
 }
 
 .spa-img-content {
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .spa-img {
@@ -107,9 +114,12 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  
 }
 
-
-
-
-
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Serif JP', serif;
+  
+}
