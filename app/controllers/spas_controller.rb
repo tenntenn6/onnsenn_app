@@ -1,6 +1,7 @@
 class SpasController < ApplicationController
+  
   def index
-    @spas = Spa.all 
+    @spas = Spa.includes(:company).order('created_at DESC')
   end
 end
 

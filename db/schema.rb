@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_09_030622) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_11_075554) do
   create_table "companies", charset: "utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -38,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_09_030622) do
     t.text "facility", null: false
     t.text "business_hours", null: false
     t.text "access", null: false
+    t.integer "company_id"
   end
 
 end
