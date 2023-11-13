@@ -9,14 +9,19 @@ class SpasController < ApplicationController
   end
 
   def create
-    Spa.create(spa_params)
-    redirect_to '/'
+    @spa = Spa.new(spa_params)   
+    
+    if @spa.save
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
 
   private
   def spa_params
-    params.require(:spa).permit(:name, :image, :detail, :facility, :business_hours, :access)
+    params.require(:spa).permit(:name, :image, :detail, :facility, :business_hours, :access).merge(company_id: current_company.id)
   end
 end
 

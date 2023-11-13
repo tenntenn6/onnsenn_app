@@ -23,21 +23,23 @@
     <h2 class='title'>温泉施設一覧</h2>
     <ul class='spa-lists'>
       <%# each doで施設を一個一個出してる %>
-      <%# @spas.each do |spa|%>
+      <% @spas.each do |spa|%>
 
       <%# link do でこの範囲のやつ、クリックしたら詳細ページに飛べるようにしてる%>
       <li class='list'>
-        <%#= link_to spa_path(spa.id) do %>
-        <div class='spa-img-content'>
-          <%= image_tag spa.image, class: "spa-img" %>
+        <%= link_to  do  %>
+        <div class="list-detail">
+          <div class='spa-img-content'>
+            <%= image_tag spa.image, class: "spa-img" %>
+          </div>
+          <h3 class='spa-name'>
+              <%= "#{spa.name}" %>
+          </h3>
         </div>
-        <h3 class='spa-name'>
-            <%#= "#{spa.name}" %>
-        </h3>
-        <%# end %>
+        <% end %>
        
       </li>
-      <%# end %>
+     <% end %>
     </ul>
 </div>
 

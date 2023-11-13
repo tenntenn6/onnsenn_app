@@ -61,12 +61,20 @@ input[type="file"] {
 
 
 form input[type="submit"] {
-  background-color: #57C3E9;
   border-radius: 20px;
-  color: #fff;
-  border: 0;
+  color: black;
+  border: 1px solid #CCCCCC;
   font-size: 18px;
   margin: auto;
   width: 20vw;
   margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+form input:focus, form textarea:focus, form .click-upload:focus {
+  outline: none;
+}
+
+}
+

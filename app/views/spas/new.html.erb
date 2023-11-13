@@ -25,8 +25,8 @@
       <%= form.text_area :access, placeholder: "温泉施設の住所・アクセス", rows: "7" %>
       <div class="click-upload">
         温泉施設の写真を選んで下さい
-        <%=link_to form.file_field :image, class:"image_select" %>
-      </div>
+        <%= form.file_field :image, class:"image_select" %>
+      </div> 
       <%= form.submit "登録する" %>
     <% end %>
   </div>
