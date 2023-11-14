@@ -34,7 +34,7 @@
               <%= link_to '編集' %>
             </li>
             <li>
-              <%= link_to '削除', data: { turbo_method: :delete } %>
+              <%= link_to '削除', spa_path(spa.id) ,data: { turbo_method: :delete } %>
             </li>
           <% end %>
        </ul>
