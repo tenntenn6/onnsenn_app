@@ -76,8 +76,8 @@
   border-radius: 6px;
   margin-bottom: 10px;
   width: 30vw;
-  box-shadow: 0 0 8px gray;
-  background-color: #F5F5F5;
+ 
+  
 }
 
 .form-header-text {
@@ -123,6 +123,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 0;
+  
 }
 
 /* テキストエリアのスタイル */
@@ -133,6 +134,7 @@
   border-radius: 4px;
   margin-top: 5px;
   resize: none;
+  
 }
 
 /* エラーメッセージのスタイル（エラーがある場合のみ表示） */
@@ -176,4 +178,6 @@
 .info-text {
   margin-right: 6px;
 }
+
+
 

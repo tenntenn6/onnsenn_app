@@ -21,10 +21,15 @@
   margin-bottom: 15px;
 }
 
-label {
+label,
+.field_remember_me {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+}
+
+.field_remember_me {
+  margin-top: 15px;
+  margin-left: 5px;
 }
 
 input[type="email"],
@@ -38,9 +43,9 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  width: 70%;
-  height: 100%;
-  border: 2px solid black;
+  width: 50%;
+  height: 80%;
+  border: 1px solid black;
   border-radius: 4px;
   background-color: white;
   color: black;
