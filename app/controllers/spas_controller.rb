@@ -29,6 +29,9 @@ class SpasController < ApplicationController
   end
 
   def update
+    @spa = Spa.find(params[:id])
+    @spa.update(spa_params)
+    redirect_to company_path(@spa.company.id)
   end
 
   private
