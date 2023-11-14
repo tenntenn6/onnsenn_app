@@ -1,9 +1,20 @@
 form {
   display: flex;
   flex-direction: column;
+  
 }
 
+.title_content_form {
+  font-family: 'Noto Serif JP', serif;
+  padding-bottom: 30px;
+}
 
+.contents_rows {
+ margin: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
 .containers {
   margin: 20px 0;
@@ -12,7 +23,7 @@ form {
   background-color: white;
   box-sizing: border-box;
   width: 80vw;
-  position: absolute;
+  
   height: auto; /* 高さを自動調節 */
   position: relative; /* 相対的な位置指定 */
   text-align: center;
@@ -21,7 +32,7 @@ form {
 
 
 .form .contents {
-  position: absolute;
+  
   left: 0;
   top: 30%;
   bottom: 0;
@@ -60,6 +71,12 @@ input[type="file"] {
 }
 
 
+.info_text_content {
+  margin-top: 20px;
+  text-align: left;
+  color: red;
+}
+
 form input[type="submit"] {
   border-radius: 20px;
   color: black;
@@ -67,7 +84,7 @@ form input[type="submit"] {
   font-size: 18px;
   margin: auto;
   width: 20vw;
-  margin-top: 50px;
+  margin-top: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

@@ -5,13 +5,12 @@
 
 /* 大枠*/
 .author-section {
-  height: 80vh;
+ min-height: 80vh;
+  
 }
 
 .author-section-two {
   margin: auto;
-  display: flex;
-  justify-content: center;
 }
 
 /* 事業者名*/
@@ -22,23 +21,103 @@
 
 .author-name {
   font-family: 'Noto Serif JP', serif;
-  font-size: 30px;
+  font-size: 25px;
+  margin: 50px auto 40px;
 }
 
 /*施設一覧大枠 */
 .facility-details-section {
-  width: 70vw;
-  border-radius: 8px;
+  margin: 30px auto;
+  width: 60vw;
+  border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.facility-photos {
+  border-top-left-radius: 4px;  /* 左上 */
+  border-top-right-radius: 4px; /* 右上 */
+  overflow: hidden;  /* ボーダーラディウスを適用するために必要 */
+  height: 60vh;
+  position: relative;
+}
+
+.spa-box-img {
+  object-fit: cover;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.more_list {
+    position: absolute;
+    top: 0;  /* 画像の下に配置 */
+    right: 0;   /* 画像の右に配置 */
+    text-align: right;
+    width: 80px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    
+    
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    
+}
+
+.more_list li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+  
+.more_list li:last-child {
+    border-bottom: 0;
+}
+  
+  
+.more_list li a {
+    display: block;
+    
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+  
+.more ul.more_list li a:hover {
+    background-color: #57C3E9;
+    color: #fff;
 }
 
 
-.facility-info {
-  height: 70%;
+
+.facility-info-two {
+ height: 60%;
 }
 
-.facility-description {
+.facility-description ,
+.facility-description-name {
   border-bottom: 1px solid gainsboro; 
+}
+
+.facility-description-name {
+  margin: 10px 10px 0;
+  padding: 10px;
+}
+
+.facility-description-access,
+.facility-description{
   margin: 0 10px;
+  padding: 10px;
+}
+
+/*枠内の文字部分*/
+.description-content {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.hours-content-top,
+.access-content-top {
+  font-size: smaller;
+  opacity: 0.7;
 }
 
