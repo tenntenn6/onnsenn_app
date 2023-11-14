@@ -127,43 +127,9 @@
   
 }
 
-.more_list {
-  position: absolute;
-  text-align: left;
-  width: 80px;
-  right: 0;
-  font-size: 15px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  display: none;  /*要修正！！！*/
-  
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  
-  list-style: none;
-}
-
-.more_list li {
-  border-bottom: 1px solid #ddd;
-  padding: 5px;
-}
-
-.more_list li:last-child {
-  border-bottom: 0;
-}
 
 
-.more_list li a {
-  display: block;
-  
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
 
-.more ul.more_list li a:hover {
-  background-color: #57C3E9;
-  color: #fff;
-}
 
 
 .spa_name {

@@ -22,18 +22,28 @@
       </div>
     </div>
 
-  <% @spas.each do |spa| %>
+   <% @spas.each do |spa| %>
    <div class="facility-details-section">
      <%# 温泉施設 %>
      <%#写真%>
      <div class="facility-photos">
       <%= image_tag spa.image, class:"spa-box-img" %>
+      <ul class="more_list">
+          <% if company_signed_in? && current_company.id == spa.company_id %>
+            <li>
+              <%= link_to '編集' %>
+            </li>
+            <li>
+              <%= link_to '削除', data: { turbo_method: :delete } %>
+            </li>
+          <% end %>
+       </ul>
      </div>
 
      <%#施設%>
      <div class="facility-info">
        <div class="facility-info-two">
-          <div class="facility-description">
+          <div class="facility-description-name">
            <span class="description-content"><%= "#{spa.name}" %></span>
           </div>
       
@@ -53,14 +63,14 @@
              <span class="hours-content"><%= "#{spa.business_hours}" %></span>
             </div>
 
-            <div class="facility-description">
+            <div class="facility-description-access">
               <div class="access-content-top">アクセス</div>
               <span class="access-content"><%= "#{spa.access}" %></span>
             </div>
         </div>
      </div>
     </div>
-  <% end %>
+   <% end %>
 
   </div>
 </div>
