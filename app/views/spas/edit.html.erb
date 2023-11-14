@@ -14,7 +14,7 @@
 
 
 <%#登録フォーム%>
-<div class="contents rows">
+<div class="contents_rows">
   <div class="containers">
   <h2 class="title_content_form">施設情報を入力して下さい</h2>
     <%= form_with(model: @spa, local: true) do |form| %>
@@ -27,6 +27,9 @@
         温泉施設の写真を選んで下さい
         <%= form.file_field :image, class:"image_select" %>
       </div> 
+      <div>
+        <p class='info_text_content'>※ 全て必須項目です。</p>
+      </div>
       <%= form.submit "登録する" %>
     <% end %>
   </div>
