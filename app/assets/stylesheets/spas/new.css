@@ -3,7 +3,9 @@ form {
   flex-direction: column;
 }
 
-
+.title_content_form {
+  font-family: 'Noto Serif JP', serif;
+}
 
 .containers {
   margin: 20px 0;

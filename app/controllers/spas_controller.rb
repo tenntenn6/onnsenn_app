@@ -24,6 +24,13 @@ class SpasController < ApplicationController
     redirect_to company_path(@spa.company.id)
   end
 
+  def edit
+    @spa = Spa.find(params[:id])
+  end
+
+  def update
+  end
+
   private
   def spa_params
     params.require(:spa).permit(:name, :image, :detail, :facility, :business_hours, :access).merge(company_id: current_company.id)

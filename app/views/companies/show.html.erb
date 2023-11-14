@@ -31,7 +31,7 @@
       <ul class="more_list">
           <% if company_signed_in? && current_company.id == spa.company_id %>
             <li>
-              <%= link_to '編集' %>
+              <%= link_to '編集',edit_spa_path(spa.id) %>
             </li>
             <li>
               <%= link_to '削除', spa_path(spa.id) ,data: { turbo_method: :delete } %>
