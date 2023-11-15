@@ -1,0 +1,62 @@
+<%#ヘッダー%>
+<div class= 'top_header'>
+ <div class='sub_header'>
+  <ul class='search-bar-contents-top'>
+   <li class='search-bar-contents'>
+     <%= link_to "HOT", spas_path, class:"apuri_mei"%>
+    </li>
+    <li class='search-bar-contents'>
+      <%= link_to "TATOO", spas_path, class:"apuri_mei"%>
+   </li>
+  </ul>
+ </div>
+</div>
+
+ <%#温泉施設詳細ページ%>
+<div class="author-section">
+  <div class="author-section-two">
+    
+
+   
+    <div class="facility-details-section">
+     <%# 温泉施設 %>
+     <%#写真%>
+      <div class="facility-photos">
+       <%= image_tag @spa.image, class:"spa-box-img" %>
+      </div>
+
+     <%#施設%>
+      <div class="facility-info">
+        <div class="facility-info-two">
+          <div class="facility-description-name">
+           <span class="description-content"><%= "#{@spa.name}" %></span>
+          </div>
+      
+     
+
+          <div class="facility-description">
+            <span class="description-content"><%= "#{@spa.detail}" %></span>
+          </div>
+
+           <div class="facility-description">
+             <span class="description-content"><%= "#{@spa.facility}" %></span>
+           </div>
+
+
+            <div class="facility-description">
+             <div class="hours-content-top">営業時間</div>
+             <span class="hours-content"><%= "#{@spa.business_hours}" %></span>
+            </div>
+
+            <div class="facility-description-access">
+              <div class="access-content-top">アクセス</div>
+              <span class="access-content"><%= "#{@spa.access}" %></span>
+            </div>
+        </div>
+      </div>
+    </div>
+   
+
+  </div>
+</div>
+
