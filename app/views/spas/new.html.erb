@@ -18,6 +18,10 @@
   <div class="containers">
   <h2 class="title_content_form">施設情報を入力して下さい</h2>
     <%= form_with(model: @spa, local: true) do |form| %>
+      <div class="error-alert">
+       <%= render "devise/shared/error_messages", resource: form.object %>
+      </div>
+     
       <%= form.text_field :name, placeholder: "温泉施設の名前" %>
       <%= form.text_area :detail, placeholder: "施設の概要を記入して下さい", rows: "10" %>
       <%= form.text_area :facility, placeholder: "温泉設備について記入して下さい", rows: "10" %>
@@ -27,10 +31,10 @@
         温泉施設の写真を選んで下さい
         <%= form.file_field :image, class:"image_select" %>
       </div> 
-      <div>
+      <div class="info_text_waku">
         <p class='info_text_content'>※ 全て必須項目です。</p>
       </div>
-      <%= form.submit "登録する" %>
+      <%= form.submit "登録する" , class: "custom-submit-button"%>
     <% end %>
   </div>
 </div>

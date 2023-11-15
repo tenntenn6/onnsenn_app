@@ -14,6 +14,9 @@
 <div class="contents row">
   <div class="container">
     <%= form_with model: @company, url: company_session_path, class: 'new_company', local: true do |f| %>
+       <div class="error-alert">
+         <%= render "devise/shared/error_messages", resource: f.object %>
+       </div>
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true,autocomplete: "current-password"  %>
@@ -30,7 +33,7 @@
          <%= f.check_box :remember_me %>
         </div>
         <div class="field">
-         <%= f.label :remember_me %>
+         <%= f.label :remember_me ,class: 'field_remember_me'%>
         </div>
        
       </div>
@@ -38,7 +41,7 @@
 
     
       <div class="actions">
-        <%= f.submit "ログインする" %>
+        <%= f.submit "ログイン", class: 'submit_button_session' %>
       </div>
     <% end %>
   </div>

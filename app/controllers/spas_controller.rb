@@ -30,8 +30,12 @@ class SpasController < ApplicationController
 
   def update
     @spa = Spa.find(params[:id])
-    @spa.update(spa_params)
-    redirect_to company_path(@spa.company.id)
+
+    if @spa.update(spa_params)
+     redirect_to company_path(@spa.company.id)
+    else
+     render :edit, status: :unprocessable_entity
+    end
   end
 
   private

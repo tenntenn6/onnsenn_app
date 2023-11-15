@@ -2,6 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   
+  
 }
 
 .title_content_form {
@@ -52,10 +53,12 @@ form textarea,
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
   color: #777777;
+  
 }
 
 .click-upload {
   text-align: left;
+  
 }
 
 form textarea {
@@ -63,11 +66,18 @@ form textarea {
  resize: vertical;
  max-height: calc(3em * );
   /* 垂直方向のみリサイズ可能にする */
+  
 }
 
 input[type="file"] {
  border: none;
  margin-left: -20px;
+ margin-top: 5px ;
+}
+
+.info_text_waku {
+  
+  margin-top: 25px;
 }
 
 
@@ -75,17 +85,19 @@ input[type="file"] {
   margin-top: 20px;
   text-align: left;
   color: red;
+  
 }
 
-form input[type="submit"] {
+.custom-submit-button {
   border-radius: 20px;
   color: black;
   border: 1px solid #CCCCCC;
   font-size: 18px;
-  margin: auto;
-  width: 20vw;
+  margin:auto;
+  
   margin-top: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 
@@ -93,5 +105,13 @@ form input:focus, form textarea:focus, form .click-upload:focus {
   outline: none;
 }
 
+.error_message_list {
+  list-style: none;
+  text-align: left;
+}
 
 
+/*編集ページの登録ボタン*/
+.edit_submit_button {
+  margin: auto;
+}
