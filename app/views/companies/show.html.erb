@@ -2,9 +2,14 @@
 <div class= 'top_header'>
  <div class='sub_header'>
    <div class='search-bar-contents'>
-     <div class='apuri_mei_waku'>
-       <h1 class = 'apuri_mei'>HOT   TATOO</h1>
-     </div>
+     <ul class='search-bar-contents-top'>
+        <li class='search-bar-contents'>
+         <%= link_to "HOT", spas_path, class:"apuri_mei"%>
+        </li>
+        <li class='search-bar-contents'>
+          <%= link_to "TATOO", spas_path, class:"apuri_mei"%>
+        </li>
+     </ul>
      <div class="waku">
        <%= link_to "施設を登録する",new_spa_path, class: "touroku_btn" %>
       </div> 

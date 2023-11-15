@@ -1,4 +1,5 @@
 class SpasController < ApplicationController
+  before_action :set_spa, only: [:edit, :show, :update, :destroy]
   
   def index
     @spas = Spa.includes(:company).order('created_at DESC')
@@ -6,6 +7,9 @@ class SpasController < ApplicationController
 
   def new
     @spa = Spa.new
+  end
+
+  def show
   end
 
   def create
@@ -19,18 +23,14 @@ class SpasController < ApplicationController
   end
 
   def destroy
-    @spa = Spa.find(params[:id])
     @spa.destroy
     redirect_to company_path(@spa.company.id)
   end
 
   def edit
-    @spa = Spa.find(params[:id])
   end
 
   def update
-    @spa = Spa.find(params[:id])
-
     if @spa.update(spa_params)
      redirect_to company_path(@spa.company.id)
     else
@@ -41,6 +41,10 @@ class SpasController < ApplicationController
   private
   def spa_params
     params.require(:spa).permit(:name, :image, :detail, :facility, :business_hours, :access).merge(company_id: current_company.id)
+  end
+
+  def set_spa
+    @spa = Spa.find(params[:id])
   end
 
 
