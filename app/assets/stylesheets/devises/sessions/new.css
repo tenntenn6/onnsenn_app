@@ -62,7 +62,6 @@ input[type="submit"] {
   display: flex;
 }
 
-/* スタイルが適用されたチェックボックス */
 input[type="checkbox"] {
   margin-right: 5px;
 }

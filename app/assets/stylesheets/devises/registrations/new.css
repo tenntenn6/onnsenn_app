@@ -1,7 +1,7 @@
-/*ヘッダーのCSS*/
 .top_header {
   background-color: #F5F5F5;
   padding-bottom: 1vh;
+  height: 13vh;
 }
 
 .sub_header {
@@ -16,26 +16,12 @@
   margin-right: 3vw;
 }
 
-
-/*.apuri_mei {
-  font-family: 'M PLUS 1p', sans-serif;
-  font-family: 'Noto Serif JP', serif;
-}*/
-
-
-
-
-
-/*メインのCSS*/
-/* スタイルのリセット */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* フォームのスタイル */
 .registration-main {
   max-width: 600px;
   margin: 50px auto;
@@ -56,12 +42,6 @@
   margin: 10px;
 }
 
-/* フォーム内の各セクションのスタイル */
-.form-wrap {
-  /* ここに適切なスタイルを追加 */
-}
-
-/* フォームのヘッダーのスタイル */
 .form-header-top {
   text-align: center;
   display: flex;
@@ -69,15 +49,12 @@
 }
 
 .form-header {
-  
   color: black;
   text-align: center;
   padding: 5px;
   border-radius: 6px;
   margin-bottom: 10px;
   width: 30vw;
- 
-  
 }
 
 .form-header-text {
@@ -92,19 +69,18 @@
   
 }
 
-/* 必須項目のスタイル */
+
 .indispensable {
   color: #ff0000;
   font-size: 1.5em;
   margin-bottom: 0;
 }
 
-/* フォームグループのスタイル */
 .form-group {
   margin-bottom: 20px;
 }
 
-/* フォームラベルのスタイル */
+
 .form-text-wrap {
   display: flex;
   align-items: center;
@@ -116,7 +92,6 @@
   font-size: 14x;
 }
 
-/* 入力フィールドのスタイル */
 .input-default {
   width: 100%;
   padding: 10px;
@@ -126,7 +101,6 @@
   
 }
 
-/* テキストエリアのスタイル */
 .input-name {
   width: 100%;
   padding: 10px;
@@ -137,13 +111,11 @@
   
 }
 
-/* エラーメッセージのスタイル（エラーがある場合のみ表示） */
 .error-message {
   color: #ff0000;
   margin-top: 5px;
 }
 
-/* 送信ボタンのスタイル */
 .register-btn-top {
   display: flex;
   justify-content: center;
@@ -164,11 +136,6 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
-/*.register-red-btn:hover {
-  background-color: #55FFFF;
-}*/
-
 
 .info-text-sub {
   display: flex;
