@@ -1,5 +1,7 @@
 class SpasController < ApplicationController
   before_action :set_spa, only: [:edit, :show, :update, :destroy]
+  before_action :move_to_index, except: [:index, :show, :search]
+  before_action :contributor_confirmation, only: [:edit, :destroy]
   
       
   def index
@@ -50,7 +52,16 @@ class SpasController < ApplicationController
  def set_spa
   @spa = Spa.find(params[:id])
  end
-    
+
+ def move_to_index
+  return if company_signed_in?
+  redirect_to new_company_session_path
+ end
+
+ def contributor_confirmation
+  redirect_to root_path unless current_company == @spa.company
+ end
+     
 
 end
 

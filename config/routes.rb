@@ -7,8 +7,6 @@ Rails.application.routes.draw do
     end
   end
   resources :companies, only: [:show]
-
-  
 end
 
 
