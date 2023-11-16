@@ -51,13 +51,14 @@ https://onnsenn-app.onrender.com/
 ![Image from Gyazo](https://i.gyazo.com/0e07051ddf17e7b70a262c80f891fb7b.jpg)
 
 * 詳細ページ  
-![Image from Gyazo](https://i.gyazo.com/cccc9ca9e765037176ca2492b4b31217.jpg)  
+![Image from Gyazo](https://i.gyazo.com/3d6c394907cf2205d74de775072fa11d.jpg)
 
 * 事業者の会員登録  
 ![Image from Gyazo](https://i.gyazo.com/394a1e67bcf02e9408afcdd1d0a6a77c.gif)
 
 * マイページ  
-![Image from Gyazo](https://i.gyazo.com/0a8a55ae020371e03ec2ff301f1b5203.gif)
+![Image from Gyazo](https://i.gyazo.com/00a59a40f3172efc1c510a5c05cb0353.jpg)  
+![Image from Gyazo](https://i.gyazo.com/a8813b7cf61bbb96eede74b2bdb930e1.jpg)  
 
 * 温泉施設の新規登録機能  
 ![Image from Gyazo](https://i.gyazo.com/21e551131092a4202c065b940a52dc49.gif)  
