@@ -51,25 +51,24 @@ https://onnsenn-app.onrender.com/
 ![Image from Gyazo](https://i.gyazo.com/0e07051ddf17e7b70a262c80f891fb7b.jpg)
 
 * 詳細ページ  
-![Image from Gyazo](https://i.gyazo.com/f9f59f380e1b08485c7575eb637eaca9.gif)
+![Image from Gyazo](https://i.gyazo.com/cccc9ca9e765037176ca2492b4b31217.jpg)  
 
 * 事業者の会員登録  
 ![Image from Gyazo](https://i.gyazo.com/394a1e67bcf02e9408afcdd1d0a6a77c.gif)
 
 * ログイン機能  
-![Image from Gyazo](https://i.gyazo.com/0a00c20482bd4b2a397c43f1bc623dcf.gif)
-
-* ログアウト機能  
-![Image from Gyazo](https://i.gyazo.com/74547da71bdd72f9956a87f1fd5f7055.gif)
+![Image from Gyazo](https://i.gyazo.com/dfe937f194cde8005ae84d4fc4f5eea5.png)  
 
 * マイページ  
 ![Image from Gyazo](https://i.gyazo.com/0a8a55ae020371e03ec2ff301f1b5203.gif)
 
 * 温泉施設の新規登録機能  
-![Image from Gyazo](https://i.gyazo.com/21e551131092a4202c065b940a52dc49.gif)
+![Image from Gyazo](https://i.gyazo.com/21e551131092a4202c065b940a52dc49.gif)  
+
+* ログアウト機能  
 
 * 検索機能  
-![Image from Gyazo](https://i.gyazo.com/d1d8b0284e46575af0ef0e7771fc37d4.gif)
+
 
 
 ## データベース設計 
