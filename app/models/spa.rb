@@ -11,5 +11,16 @@ class Spa < ApplicationRecord
   has_one_attached :image
   
 
+  def self.search(search)
+    if search != ""
+      Spa.where(['name LIKE(?) OR detail LIKE(?) OR business_hours LIKE(?) OR access LIKE(?)', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%"])
+    else
+      Spa.includes(:company).order('created_at DESC')
+    end
+  end
+ 
+  
+
+  
 end
 
